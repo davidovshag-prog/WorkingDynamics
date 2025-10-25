@@ -137,10 +137,5 @@
         private System.Windows.Forms.Button btnSubtract;
         private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.Label label1;
-
-        // private TextBox txtN;
-        // private Button btnBuilder;
-        // private Button btnCalculation;
-        // private TextBox txtM;
     }
 }

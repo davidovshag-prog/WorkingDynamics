@@ -4,12 +4,12 @@ namespace WorkingDynamics
 {
     public class MyMatrix
     {
-        // Властивості для зберігання даних та розмірів
+        // зберігання даних та розмірів
         public double[,] Data { get; private set; }
         public int Rows { get; private set; }
         public int Cols { get; private set; }
 
-        // Конструктор для створення порожньої матриці
+        // створення порожньої матриці
         public MyMatrix(int rows, int cols)
         {
             this.Rows = rows;
@@ -17,7 +17,7 @@ namespace WorkingDynamics
             this.Data = new double[rows, cols];
         }
 
-        // Конструктор для створення матриці з масиву
+        // створення матриці з масиву
         public MyMatrix(double[,] data)
         {
             this.Data = data;

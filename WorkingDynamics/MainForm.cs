@@ -14,7 +14,6 @@ namespace WorkingDynamics
         {
             InitializeComponent();
 
-            // Налаштування ComboBox для вибору розміру
             cbRows.DropDownStyle = ComboBoxStyle.DropDownList;
             cbRows.Items.Add("2");
             cbRows.Items.Add("3");
@@ -33,7 +32,6 @@ namespace WorkingDynamics
             ClearMatrixView(ref textBoxesB, gbB);
             ClearMatrixView(ref textBoxesC, gbC);
 
-            // 2. Будуємо нові матриці
             // Матриця A (для введення)
             textBoxesA = BuildMatrixView(gbA, n, n, false);
             // Матриця B (для введення)
@@ -109,7 +107,7 @@ namespace WorkingDynamics
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    // .TryParse - перетворення тексту в число
+                    // перетворення тексту в число
                     if (!double.TryParse(boxes[i, j].Text, out data[i, j]))
                     {
                         // Якщо введено не число, кидаємо помилку
